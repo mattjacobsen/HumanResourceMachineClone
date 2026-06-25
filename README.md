@@ -41,6 +41,10 @@ npm run build    # production build
 3. **Coffee Break** - introduces floor tiles (`COPYFROM`/`COPYTO`) with a fixed two-item swap, no loop required yet.
 4. **Double Trouble** - introduces `Repeat Forever` and `Add`, doubling every number that comes through.
 
+## Deployment
+
+Pushes to `main` build and deploy automatically to GitHub Pages via `.github/workflows/pages.yml`. In the repo's Settings -> Pages, set "Build and deployment" -> Source to "GitHub Actions". The site is served at `/HumanResourceMachineClone/`, which is why `vite.config.ts` sets a matching `base`.
+
 ## Roadmap / not-yet-built
 
 - More levels covering `Sub`, `Bump Up/Down`, and `If` (negative/zero conditions), each with a repetition level after it.
